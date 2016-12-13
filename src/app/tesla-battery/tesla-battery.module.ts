@@ -7,9 +7,11 @@ import { TeslaCarComponent } from './components/tesla-car/tesla-car.component';
 import { TeslaStatsComponent } from './components/tesla-stats/tesla-stats.component';
 import { TeslaCounterComponent } from './components/tesla-counter/tesla-counter.component';
 import { TeslaClimateComponent } from './components/tesla-climate/tesla-climate.component';
+import { TeslaWheelsComponent } from './components/tesla-wheels/tesla-wheels.component';
 
 // services
 import { BatteryService } from './tesla-battery.service';
+
 
 @NgModule({
     declarations: [
@@ -17,7 +19,8 @@ import { BatteryService } from './tesla-battery.service';
         TeslaCarComponent, 
         TeslaStatsComponent,
         TeslaCounterComponent,
-        TeslaClimateComponent
+        TeslaClimateComponent,
+        TeslaWheelsComponent
     ],
     imports: [
         CommonModule,
