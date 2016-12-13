@@ -6,6 +6,7 @@ import { TeslaBatteryComponent } from './containers/tesla-battery/tesla-battery.
 import { TeslaCarComponent } from './components/tesla-car/tesla-car.component'; 
 import { TeslaStatsComponent } from './components/tesla-stats/tesla-stats.component';
 import { TeslaCounterComponent } from './components/tesla-counter/tesla-counter.component';
+import { TeslaClimateComponent } from './components/tesla-climate/tesla-climate.component';
 
 // services
 import { BatteryService } from './tesla-battery.service';
@@ -15,7 +16,8 @@ import { BatteryService } from './tesla-battery.service';
         TeslaBatteryComponent,
         TeslaCarComponent, 
         TeslaStatsComponent,
-        TeslaCounterComponent
+        TeslaCounterComponent,
+        TeslaClimateComponent
     ],
     imports: [
         CommonModule,
