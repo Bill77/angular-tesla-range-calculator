@@ -6,6 +6,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
     template: `
         <form class="tesla-battery" [formGroup]="tesla">
             <h1>{{ title }}</h1>
+            <tesla-car [wheelSize]="tesla.get('config.wheels').value"></tesla-car>
             <div class="tesla-battery__notice">
                 <p>
                     The actual amount of range that you experience will vary based on your particluar use conditions.
