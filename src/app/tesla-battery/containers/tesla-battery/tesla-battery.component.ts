@@ -6,23 +6,7 @@ import { BatteryService } from '../../tesla-battery.service';
 
 @Component({
     selector: 'tesla-battery',
-    template: `
-        <form class="tesla-battery" [formGroup]="tesla">
-            <h1>{{ title }}</h1>
-            <tesla-car [wheelSize]="tesla.get('config.wheels').value"></tesla-car>
-            <tesla-stats [stats]="stats"></tesla-stats>
-            <div class="tesla-battery__notice">
-                <p>
-                    The actual amount of range that you experience will vary based on your particluar use conditions.
-                    See how particular use conditions may affect your range in our simulation model.
-                </p>
-                <p>
-                    Vehicle range may vary depending on the vehicle configuration, battery age and condition, driving style
-                    and operating, environmental and climate conditions.
-                </p>
-            </div>
-        </form>
-    `,
+    templateUrl: './tesla-battery.component.html',
     styleUrls: ['./tesla-battery.component.scss']
 })
 export class TeslaBatteryComponent implements OnInit {
